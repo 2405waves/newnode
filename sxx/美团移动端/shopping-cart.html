@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container shopping-cart">
+      <header>
+        <i class="iconfont icon-zuo fl"></i>
+        <h1>购物车</h1>
+        <span class="fr">编辑</span>
+      </header>
+      <section style="margin-top: 54px;">
+        <ul class="goods-list">
+          <li>
+            <ul class="goods clearfix position">
+              <li class="fl check"><input type="checkbox" /></li>
+              <li class="fl goods-img"><img src="images/goods1.jpg" alt="" /></li>
+              <li class="fl goods-name">
+                <h3>科尔沁牛腩切块500g</h3>
+                <p>脂肪少，适合炖汤</p>
+                <div>
+                  <p class="fl price">¥21.80</p>
+                  <p class="fr num"><button class="reduce">-</button><input type="number" value="1" /><button class="add">+</button></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="goods clearfix position">
+              <li class="fl check"><input type="checkbox" /></li>
+              <li class="fl goods-img"><img src="images/goods2.jpg" alt="" /></li>
+              <li class="fl goods-name">
+                <h3>精选有机胡萝卜300g</h3>
+                <p>胡萝卜富含维生素</p>
+                <div>
+                  <p class="fl price">¥8.60</p>
+                  <p class="fr num"><button class="reduce">-</button><input type="number" value="1" /><button class="add">+</button></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="goods clearfix position">
+              <li class="fl check"><input type="checkbox" /></li>
+              <li class="fl goods-img"><img src="images/goods3.jpg" alt="" /></li>
+              <li class="fl goods-name">
+                <h3>精选本地豆角300g</h3>
+                <p>富有维生素和矿物质等</p>
+                <div>
+                  <p class="fl price">¥10.20</p>
+                  <p class="fr num"><button class="reduce">-</button><input type="number" value="1" /><button class="add">+</button></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="goods clearfix position">
+              <li class="fl check"><input type="checkbox" /></li>
+              <li class="fl goods-img"><img src="images/goods4.jpg" alt="" /></li>
+              <li class="fl goods-name">
+                <h3>精选本地柿子椒500g</h3>
+                <p>它可以防治坏血病</p>
+                <div>
+                  <p class="fl price">¥15.80</p>
+                  <p class="fr num"><button class="reduce">-</button><input type="number" value="1" /><button class="add">+</button></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="goods clearfix position">
+              <li class="fl check"><input type="checkbox" /></li>
+              <li class="fl goods-img"><img src="images/goods1.jpg" alt="" /></li>
+              <li class="fl goods-name">
+                <h3>科尔沁牛腩切块500g</h3>
+                <p>脂肪少，适合炖汤</p>
+                <div>
+                  <p class="fl price">¥21.80</p>
+                  <p class="fr num"><button class="reduce">-</button><input type="number" value="1" /><button class="add">+</button></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="goods clearfix position">
+              <li class="fl check"><input type="checkbox" /></li>
+              <li class="fl goods-img"><img src="images/goods2.jpg" alt="" /></li>
+              <li class="fl goods-name">
+                <h3>精选有机胡萝卜300g</h3>
+                <p>胡萝卜富含维生素</p>
+                <div>
+                  <p class="fl price">¥8.60</p>
+                  <p class="fr num"><button class="reduce">-</button><input type="number" value="1" /><button class="add">+</button></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="goods clearfix position">
+              <li class="fl check"><input type="checkbox" /></li>
+              <li class="fl goods-img"><img src="images/goods3.jpg" alt="" /></li>
+              <li class="fl goods-name">
+                <h3>精选本地豆角300g</h3>
+                <p>富有维生素和矿物质等</p>
+                <div>
+                  <p class="fl price">¥10.20</p>
+                  <p class="fr num"><button class="reduce">-</button><input type="number" value="1" /><button class="add">+</button></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="goods clearfix position">
+              <li class="fl check"><input type="checkbox" /></li>
+              <li class="fl goods-img"><img src="images/goods4.jpg" alt="" /></li>
+              <li class="fl goods-name">
+                <h3>精选本地柿子椒500g</h3>
+                <p>它可以防治坏血病</p>
+                <div>
+                  <p class="fl price">¥15.80</p>
+                  <p class="fr num"><button class="reduce">-</button><input type="number" value="1" /><button class="add">+</button></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <div class="foot clearfix">
+        <div class="selectAll fl">
+          <p class="fl"><input type="checkbox" name="check" id="checked" /><label for="check">全选</label></p>
+          <div class="total fl">
+            <p><span>合计：￥</span><span class="totalPrice">0.00</span></p>
+            <p><span>总额：</span><span class="totalPrice">0.00</span></p>
+          </div>
+        </div>
+        <p class="fr go-account">
+          <a href="##">去结算<span class="count">(0)</span></a>
+        </p>
+      </div>
+    </div>
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      $(function() {
+        //全选
+        $("#checked").click(function() {
+          if($(this).is(":checked")) {
+            $(".check input").each(function() {
+              $(this).attr("checked", "checked");
+            })
+          } else {
+            $(".check input").each(function() {
+              $(this).removeAttr("checked");
+            })
+          }
+          count();
+          allPrice();
+        });
+        //反选
+        $(".check input").click(function() {
+          var num = 0;
+          $(".check input").each(function() {
+            if($(this).is(":checked")) {
+              num++;
+            }
+          });
+          if(num == $(".check input").length) {
+            $("#checked").attr("checked", "checked");
+
+          } else {
+            $("#checked").removeAttr("checked");
+          }
+          count();
+          allPrice();
+        });
+        
+        $(".reduce").each(function() {
+          if($(this).next().val() == 1) {
+            $(this).attr("disabled", "disabled");
+          }
+        })
+        //数量加
+        $(".add").click(function() {
+          var num = 0;
+          num = parseInt($(this).prev().val()) + 1;
+          $(this).prev().val(num);
+          if (num>1) {
+          	$(this).parent().find(".reduce").removeAttr("disabled");
+          }
+          count();
+          allPrice();
+        });
+        //数量减 
+        $(".reduce").click(function() {
+          var num = 0;
+          num = parseInt($(this).next().val()) - 1;
+          $(this).next().val(num);
+          if($(this).next().val() == 1) {
+            $(this).attr("disabled","disabled");
+          }
+          count();
+          allPrice();
+        });
+        //计算数量
+        function count() {
+          var amount = 0;
+          $(".check input").each(function() {
+            if($(this).is(":checked")) {
+              amount += parseInt($(this).parents(".goods").find("input[type=number]").val());
+            }
+          })
+          $(".count").html("(" + amount + ")");
+        }
+        //计算金额
+        function allPrice() {
+          var totalPrice = 0;
+          var total = 0;
+          $(".check input").each(function() {
+            if($(this).is(":checked")) {
+              total = $(this).parents(".goods").find(".price").html().substring(1) * $(this).parents(".goods").find("input[type=number]").val();
+            }
+            totalPrice += total;
+          })
+          $(".totalPrice").html(totalPrice.toFixed(2));
+        };
+      })
+    </script>
+  </body>
+</html>

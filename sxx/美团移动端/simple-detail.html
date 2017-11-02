@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>单品详情</title>
+    <link rel="stylesheet" type="text/css" href="css/amazeui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container simple-detail">
+      <header>
+        <i class="iconfont icon-zuo fl"></i>
+        <h1>湾仔小精排</h1>
+        <i class="fr">。。。</i>
+      </header>
+      <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0" style="margin-top: 44px;">
+        <ul class="am-slides">
+          <li class="position"><img src="images/simple.jpg" />
+            <a href="##" class="help">帮助</a>
+            <a href="index.html" class="index">首页</a>
+            <a href="##" class="msg">客服消息</a>
+          </li>
+          <li class="position"><img src="images/simple.jpg" />
+            <a href="##" class="help">帮助</a>
+            <a href="index.html" class="index">首页</a>
+            <a href="##" class="msg">客服消息</a>
+          </li>
+          <li class="position"><img src="images/simple.jpg" />
+            <a href="##" class="help">帮助</a>
+            <a href="index.html" class="index">首页</a>
+            <a href="##" class="msg">客服消息</a>
+          </li>
+          <li class="position"><img src="images/simple.jpg" />
+            <a href="##" class="help">帮助</a>
+            <a href="index.html" class="index">首页</a>
+            <a href="##" class="msg">客服消息</a>
+          </li>
+          <li class="position"><img src="images/simple.jpg" />
+            <a href="##" class="help">帮助</a>
+            <a href="index.html" class="index">首页</a>
+            <a href="##" class="msg">客服消息</a>
+          </li>
+        </ul>
+      </div>
+      <section class="simple-intro clearfix">
+        <div class="intro-left fl">
+          <h2>湾仔码头精选1000g超级小精排</h2>
+          <p>米其林三星专供</p>
+          <span>￥120</span>
+        </div>
+        <div class="intro-right fr">
+          <span>
+            <i class="iconfont icon-wujiao"></i>
+                                    搜藏
+          </span><span>
+            <i class="iconfont icon-fenxiang1"></i>
+                                    分享
+          </span>
+          <p>周销120份</p>
+        </div>
+      </section>
+      <section class="simple-stantard">
+        <dl>
+          <dt>规格：1000g</dt>
+          <dd>该产品加工时鲜肉精分割后抽真空包装在进行急速冷 冻的，所以包装内会出现少量的血冰，为正常现象，不会影 响商品的品质及口感。
+          </dd>
+        </dl>
+      </section>
+      <section class="simple-explain">
+        <p>16:00前付款，预计3月23日送达</p>
+        <ul>
+          <li><i class="iconfont icon-shijian position"></i>信用卡支付</li>
+          <li><i class="iconfont icon-shijian position"></i>微信支付</li>
+          <li><i class="iconfont icon-shijian position"></i>当天无理由</li>
+        </ul>
+      </section>
+      <section class="goods-detail">
+        <p class="drag"><span>拖动查看商品详情</span><i class="iconfont icon-xiangxia"></i></p>
+        <div class="am-tabs" data-am-tabs style="display: none;">
+          <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active">
+              <a href="#tab1">商品详情</a>
+            </li>
+            <li>
+              <a href="#tab2">宝贝评价</a>
+            </li>
+          </ul>
+          <div class="am-tabs-bd clearfix">
+            <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+             <img src="images/simple-detail.jpg"/>
+            </div>
+            <div class="am-tab-panel am-fade" id="tab2">
+              <ul class="evaluate-num"><li>口感不错（22）</li><li>物流超快（10）</li><li>包装很好（90）</li></ul>
+              <ul class="evaluate-num"><li>价格实惠（8）</li><li>小贵（1）</li></ul>
+              <ul>
+                <li class="evaluate">
+                  <div class="head-pic fl"><img src="images/head-pic.jpg"/></div>
+                  <span class="fl">只若初见</span>
+                  <p class="clearfix">这次买的没有上次送货快，希望改进。</p>
+                  <p>2016-03-20</p>
+                </li>
+              </ul>
+              <a href="##" class="more-evaluate">查看全部评价</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="foot clearfix">
+        <a href="##">加入购物车</a>
+        <a href="##">直接购买</a>
+      </div>
+    </div>
+    <script src="js/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/amazeui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    	$(function(){
+    	  $(".drag").click(function(){
+    	    $(".am-tabs").show();
+    	  });
+    	  $(".icon-wujiao").click(function(){
+    	    $(this).css("color","#ff5e39")
+    	  });
+    	  $(".more-evaluate").click(function(){
+    	    $(".evaluate").slideDown(800);
+    	  })
+    	})
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>发布</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container issue">
+      <header>
+        <i class="iconfont icon-zuo fl"></i>
+        <h1>发布</h1>
+      </header>
+      <section class="clearfix">
+        <form action="" method="get">
+          <textarea name="txt" rows="" cols="">这一刻想说什么...</textarea>
+          <div class="imgPrev">
+          	<img id='test_img' />
+          	<input type='file' id='file1' />
+          </div>
+          <div class="myLocation">
+            <i class="iconfont icon-location_fill"></i>
+          	<input type="button" name="" id="" value="我的位置" />
+          </div>	
+          <div class="myDynamic">
+            <i class="iconfont icon-community_fill"></i>
+            <input type="button" name="" id="" value="不让谁看我的动态" />
+          </div>
+          <div class="upload">
+          	<input type="submit" name="" id="" value="我要上传" />
+          </div>
+        </form>
+      </section>
+    </div>
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      var file = document.querySelector('#file1');
+      var img = document.querySelector('#test_img');
+      file.onchange = function() {
+        // console.log(file.files[0]);
+        var reader = new FileReader();
+        reader.onload = function(evt) {
+          img.setAttribute("src", evt.target.result); //设置预览路径
+        }
+        reader.readAsDataURL(file.files[0])
+      }
+      $(function(){
+        $("#file1").html("<i class='iconfont icon-paizhao'></i>");
+      })
+    </script>
+  </body>
+
+</html>

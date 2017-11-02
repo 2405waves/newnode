@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>快速帮助中心</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+	  <div class="container help-center">
+	    <header>
+	      <i class="iconfont icon-zuo fl"></i>
+	      <h1>快速帮助中心</h1>
+	    </header>
+	    <section style="margin-top:57px;">
+	      <ul>
+	        <li>
+	          <a href="##" class="panel-hd"><i class="iconfont icon-shenhe fl position"></i>已审核订单能否取消<i class="iconfont icon-xiangxia fr"></i></a>
+	          <p class="clearfix panel-bd"><span class="fl">答：</span><span>订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</span></p>
+	        </li>
+	        <li>
+            <a href="##" class="panel-hd"><i class="iconfont icon-xiugai fl position"></i>如何修改订单<i class="iconfont icon-xiangxia fr"></i></a>
+            <p class="clearfix panel-bd"><span class="fl">答：</span><span>订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</span></p>
+          </li>
+          <li>
+            <a href="##" class="panel-hd"><i class="iconfont icon-dayin fl position"></i>怎样获得发票<i class="iconfont icon-xiangxia fr"></i></a>
+            <p class="clearfix panel-bd"><span class="fl">答：</span><span>订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</span></p>
+          </li>
+          <li>
+            <a href="##" class="panel-hd"><i class="iconfont icon-sanyuan fl position"></i>如何申请退货<i class="iconfont icon-xiangxia fr"></i></a>
+            <p class="clearfix panel-bd"><span class="fl">答：</span><span>订单提交后，您将无法自行取消您的订单。若您通过礼金卡进行支付，订单在未审核前，可自行取消订单。其他付款方式取消订单可直接致电1234-000-321。</span></p>
+          </li>
+	      </ul>
+	    </section>
+	  </div>
+	  <script src="js/jquery.min.js"></script>
+	  <script>
+	  	$(function () {
+	  	    $(".panel-hd").each(function () {
+	  	        var flag=true;
+                $(this).click(function () {
+                    if(flag){
+                        $(this).next(".panel-bd").slideDown();
+                        $(this).children(".iconfont:last").removeClass("icon-xiangxia").addClass("icon-xiangshang");
+                        flag=false;
+                    }else {
+                        $(this).next(".panel-bd").slideUp();
+                        $(this).children(".iconfont:last").removeClass("icon-xiangshang").addClass("icon-xiangxia");
+                        flag=true;
+                    }
+                })
+            })
+
+        })
+	  </script>
+	</body>
+</html>
